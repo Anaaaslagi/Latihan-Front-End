@@ -1,7 +1,7 @@
 html, body{
     margin: 0;
     padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 div{
@@ -25,6 +25,23 @@ div{
     color: white;
 }
 
+.nav{
+    top: 0;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    display: block;
+}
+
+.nav a{
+    text-decoration:none;
+    color: black;
+}
+
+.nav a:hover{
+    color: rgb(91, 91, 91);
+}
+
 ul{
     list-style: none;
     text-align: right;
@@ -35,10 +52,6 @@ ul{
     float: left;
 }
 
-.icon > h2{
-    margin: 0;
-}
-
 li{
     font-size: 16px;
     padding: 15px 25px;
@@ -46,20 +59,57 @@ li{
 }
 
 .button-green{
-    background-color: green;
-    color: white;
+    background-color: rgb(187, 206, 210);
+    color: black;
+    border-radius: 5px;
 }
 
 .mobile{
     display: none;
 }
 
-.icon.mobile{
-    background-color: black;
-    color: white;
+div{
+    display: block;
 }
 
-@media only screen and (max-width: 600px){
+#about-me {
+    padding: 2em 0;
+}
+
+.section-introduction, .section-education, .section-working {
+    text-align: center;
+}
+
+.content-perkenalan {
+    font-size: 1.2em;
+    width: 80%;
+    max-width: 24em;
+    margin: 1em auto;
+    text-align: justify;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.section-education, .section-working {
+    display: inline-block;
+    margin-top: 5em;
+}
+
+@media only screen and (min-width: 700px){
+    .section-working, .section-education {
+        width: 49.5%;
+        vertical-align: top;
+    }
+}
+
+
+@media only screen and (max-width: 700px){
     .mobile{
         display: block;
     }
@@ -67,3 +117,4 @@ li{
         display: none;
     }
 }
+
